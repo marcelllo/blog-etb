@@ -78,6 +78,7 @@ export default function Home() {
         >
           Powered by{" "}
           <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
+          Marcelo Santos &copy; 2020
         </a>
       </footer>
 
