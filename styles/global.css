@@ -1,3 +1,17 @@
 .card.link {
     cursor: pointer;
 }
+
+.title {
+    position: relative;
+}
+
+.title img {
+    left: 50%;
+    width: 150px;
+    height: 150px !important;
+    display: block;
+    position: relative;
+    transform: translateX(-50%);
+    margin-bottom: 30px;
+}

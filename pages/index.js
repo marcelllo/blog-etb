@@ -10,7 +10,10 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1 className="title">Professor Marcelo Santos</h1>
+        <h1 className="title">
+          <img src="/foto.png" alt="Vercel Logo" className="logo" />
+          Professor Marcelo Santos
+        </h1>
 
         <p className="description">Escola Técnica de Brasília - ETB</p>
 
@@ -76,8 +79,6 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{" "}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
           Marcelo Santos &copy; 2020
         </a>
       </footer>
