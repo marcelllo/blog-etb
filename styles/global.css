@@ -93,7 +93,9 @@ a {
     width: 100%;
     display: flex;
     padding-left: 10px;
-    border-left: 1px solid #ccc;
+    padding-bottom: 10px;
+    border-left: 3px solid #ccc;
+    border-bottom: 1px solid #ddd;
     justify-content: space-between;
 }
 

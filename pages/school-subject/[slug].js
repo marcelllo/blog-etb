@@ -3,6 +3,8 @@ import Link from "next/link";
 
 import mockData from "../../data/data";
 
+import Layout from "../layout";
+
 export default function Name() {
   const router = useRouter();
   const { slug } = router.query;
@@ -10,12 +12,7 @@ export default function Name() {
   const sections = mockData().getSections(subject.id);
 
   return (
-    <div className="container">
-      <main>
-        <h1 className="title">
-          <img src="/foto.png" alt="Vercel Logo" className="logo" />
-          Professor Marcelo Santos
-        </h1>
+    <Layout>
         <p className="description sub">
           {subject.name}
           <Link href="/">
@@ -27,7 +24,7 @@ export default function Name() {
           <section style={section.vertical ? {flexDirection: "column"} : {}}>
             <h2>{section.name}</h2>
             {section.files.map((f) => (
-              <a href={f.url}>
+              <a href={f.url} target="_blank">
                 <img
                   loading="lazy"
                   src={`/icone-${f.type ?? 'download'}.png`}
@@ -40,7 +37,6 @@ export default function Name() {
             ))}
           </section>
         ))}
-      </main>
-    </div>
+    </Layout>
   );
 }

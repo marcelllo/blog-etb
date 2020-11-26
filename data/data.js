@@ -147,11 +147,18 @@ export default function data() {
             "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2017/10/EXERC%C3%8DCIOS-LISTA-3-ESTRUTURA-REPETI%C3%87%C3%83O-2-SEMESTRE-2014-eletronica.doc",
           type: "word",
         },
+        {
+          name: "Lista 04 – Vetores",
+          url:
+            "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2017/10/EXERC%C3%8DCIOS-LISTA-4-VETORES-SEMESTRE-2014-eletronica.doc",
+          type: "word",
+        },
       ],
     },
     {
       id: "qwe123460",
       name: "Exemplos",
+      vertical: true,
       schoolSubjectId: "5fbfe6d74c7b0000cc007c39",
       files: [
         {
@@ -170,6 +177,48 @@ export default function data() {
           name: "Calculadora 01",
           url:
             "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2017/02/Calculadora.zip",
+          type: "zip",
+        },
+        {
+          name: "Calculadora 02",
+          url:
+            "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2017/02/Calculadora2.zip",
+          type: "zip",
+        },
+        {
+          name: "Calculadora 03",
+          url:
+            "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2017/02/Calculadora3.zip",
+          type: "zip",
+        },
+        {
+          name: "Estrutura Condicional - switch..case",
+          url:
+            "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2017/02/ExemploSwitchCase.zip",
+          type: "zip",
+        },
+        {
+          name: "Repetição indeterminada - while(..){..}",
+          url:
+            "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2017/02/RepeticaoIndeterminada.zip",
+          type: "zip",
+        },
+        {
+          name: "Repetição indeterminada - do {..} while(..)",
+          url:
+            "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2017/10/ExemploDoWhile.zip",
+          type: "zip",
+        },
+        {
+          name: "Repetição determinada - for",
+          url:
+            "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2017/10/ExemploFor.zip",
+          type: "zip",
+        },
+        {
+          name: "Vetores",
+          url:
+            "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2017/02/ExemploVetor1.zip",
           type: "zip",
         },
       ],
