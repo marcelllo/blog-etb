@@ -1,5 +1,5 @@
 import Head from 'next/head'
 
-export default function Materia(props) {
-return <h1>Matéria {props}</h1>
+export default function Materia() {
+    return (<h1>Matéria</h1>);
 }
