@@ -6,8 +6,7 @@ import mockData from "../../data/data";
 export default function Name() {
   const router = useRouter();
   const { slug } = router.query;
-  const subject = mockData().getSchoolSubject(slug);
-  const apps = mockData().getApps(subject.id);
+  const subject = mockData().getSchoolSubject(slug) || {};
   const sections = mockData().getSections(subject.id);
 
   return (

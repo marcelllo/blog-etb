@@ -35,10 +35,27 @@ export default function data() {
       description: "Apostilas e Videoaulas de programação JAVA para WEB",
     },
   ];
-
-  const apps = [];
-
   const sections = [
+		{
+			id: "5fbfe6d74c7b0000cc007c88",
+			name: "Plano de Ensino",
+			schoolSubjectId: "5fbfe6d74c7b0000cc007c38",
+			files: [
+				{url: "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2014/08/PLANO_DE_ENSINO_-INFORM%C3%81TICA-APLICADA.pdf", type: "pdf"}
+			]
+		},
+		{
+			id: "5fbfe6d74c7b0000cc007d98",
+			name: "Material",
+			schoolSubjectId: "5fbfe6d74c7b0000cc007c38",
+			vertical: true,
+			files: [
+				{name: "Apostila", url: "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2014/08/Programas_Aplicativos_COR_CAPA_20140728.pdf", type: "pdf"},
+				{name: "Resumo da evolução tecnológica", url: "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2017/03/Aula-01.pptx", type: "ppt"},
+				{name: "Lista de Exercícios de Word", url: "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2014/09/Exercicios_Word_2003.pdf", type: "pdf"},
+				{name: "Manual ABNT", url: "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2014/08/Manual_TCC.pdf", type: "pdf"},
+			]
+		},
     {
       id: "qwe123123",
       name: "Aplicativos",
@@ -167,10 +184,6 @@ export default function data() {
     return schoolSubjects.find((s) => s.slug === slug);
   };
 
-  const getApps = (schoolSubjectId) => {
-    return apps.filter((a) => a.schoolSubjectId === schoolSubjectId);
-  };
-
   const getSections = (schoolSubjectId) => {
     return sections.filter((s) => s.schoolSubjectId === schoolSubjectId);
   };
@@ -178,7 +191,6 @@ export default function data() {
   return {
     getAllSchoolSubjects,
     getSchoolSubject,
-    getApps,
     getSections,
   };
 }
