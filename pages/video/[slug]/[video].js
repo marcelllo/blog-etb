@@ -17,7 +17,7 @@ export default function Video() {
           Professor Marcelo Santos
           <p className="description">Escola Técnica de Brasília - ETB</p>
         </h1>
-        <Link href={`/school-subject/${slug}`} class="back">Voltar</Link>
+        <Link href={`/school-subject/${slug}`} class="back">&larr; Voltar</Link>
       </header>
       <main>
         <iframe

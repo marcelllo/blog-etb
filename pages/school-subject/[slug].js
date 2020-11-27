@@ -87,6 +87,15 @@ export default function Slug() {
             </section>
           ))
         )}
+
+        {!loading1 && !loading2 && (
+          <>
+            <p className="description sub">
+              {subject.name}
+              <Link href="/">&larr; Voltar</Link>
+            </p>
+          </>
+        )}
       </div>
     </Layout>
   );
