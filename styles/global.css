@@ -178,6 +178,11 @@ section a img {
   vertical-align: middle;
 }
 
+section.vertical {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .sub a {
   color: #00D;
   font-weight: bold;
@@ -185,6 +190,14 @@ section a img {
 
 .sub a:hover {
   color: #0070f3;
+}
+
+.loading {
+  display: flex;
+  min-height: 50vh;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
 @media (max-width: 600px) {

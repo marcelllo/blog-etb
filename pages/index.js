@@ -1,17 +1,34 @@
-import Head from "next/head";
+import { useEffect, useState } from "react";
 import Link from "next/link";
+import Layout from "./layout";
+import Loading from "./layout/loading";
 
+import api from "../data/api";
 import mockData from "../data/data";
 
-import Layout from "./layout";
 
 export default function Index() {
-  const subjects = mockData().getAllSchoolSubjects();
+  const [subjects, setSubjects] = useState([]);
+  const [loading, setLoading] = useState(true);
+  
+  useEffect(() => {
+    const subjects = mockData().getAllSchoolSubjects();
+    setSubjects(subjects);
+    setLoading(false);
+    // api.get('/subjects').then(res => {
+    //     setSubjects(res.data);
+    //     setLoading(false);
+    // });    
+  }, []);
+  
 
   return (
     <Layout>
       <div className="grid">
-        {subjects.map((subject) => (
+        {loading ? 
+          <Loading />
+        :
+        subjects.map((subject) => (
           <Link href={"/school-subject/" + subject.slug} key={subject.id}>
             <div className="card link">
               <h3>{subject.name} &rarr;</h3>
