@@ -416,17 +416,11 @@ export default function data() {
           name: "Apostila",
           type: "pdf",
           url: "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2013/10/ETEC_Unidade_V_LTP_I_Java-pag-77-a-83.pdf"
-        },
-        {
-          id: "5fbfe6d74c7b0000cc007c401002",
-          name: "Lista de Exercícios V e VI",
-          type: "pdf",
-          url: "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2013/10/Lista-de-Exerc%c3%adcios-5-Unidade-V-e-VI.pdf"
         }
       ]
     },
     {
-      id: "",
+      id: "5fbfe6d74c7b0000cc007c4011",
       name: "Videoaulas",
       vertical: true,
       schoolSubjectId: "5fbfe6d74c7b0000cc007c40",
@@ -436,6 +430,71 @@ export default function data() {
         {"id": "5fbfe6d74c7b0000cc007c401103", "type":"video", "name":"Sobrecarga de métodos – parte 2","url":"https://goo.gl/AZLiSs"},
         {"id": "5fbfe6d74c7b0000cc007c401104", "type":"video", "name":"Sobrecarga de métodos – parte 3","url":"https://goo.gl/oBKcA8"},
         {"id": "5fbfe6d74c7b0000cc007c401105", "type":"video", "name":"Sobrecarga de métodos – parte 4","url":"https://goo.gl/t5guBi"}
+      ]
+    },
+    {
+      id: "5fbfe6d74c7b0000cc007c4012",
+      name: "Unidade 6 – Utilização de Diversas Classes e Vetor em Java",
+      schoolSubjectId: "5fbfe6d74c7b0000cc007c40",
+      files: [
+        {
+          id: "5fbfe6d74c7b0000cc007c401201",
+          name: "Apostila",
+          type: "pdf",
+          url: "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2013/10/ETEC_Unidade_VI_LTP_I_Java-pag-84-a-98.pdf"
+        },
+        {
+          id: "5fbfe6d74c7b0000cc007c401202",
+          name: "Lista de Exercícios V e VI",
+          type: "pdf",
+          url: "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2013/10/Lista-de-Exerc%c3%adcios-5-Unidade-V-e-VI.pdf"
+        }
+      ]
+    },
+    {
+      id: "5fbfe6d74c7b0000cc007c4013",
+      name: "Videoaulas",
+      vertical: true,
+      schoolSubjectId: "5fbfe6d74c7b0000cc007c40",
+      files: [
+        {"id": "5fbfe6d74c7b0000cc007c401301", "type": "video", "name":"Classes e Vetor","url":"https://goo.gl/npImnN"}
+      ]
+    },
+    {
+      id: "5fbfe6d74c7b0000cc007c4101",
+      name: "Apostila",
+      schoolSubjectId: "5fbfe6d74c7b0000cc007c41",
+      files: [
+        {id: "5fbfe6d74c7b0000cc007c410101", name: "Apostila de JAVA Caelum", url: "https://www.caelum.com.br/apostila-java-web/", type: "pdf"}
+      ]
+    },
+    {
+      id: "5fbfe6d74c7b0000cc007c4102",
+      name: "Diagramas de Classe - Exercícios",
+      schoolSubjectId: "5fbfe6d74c7b0000cc007c41",
+      vertical: true,
+      files: [
+        {id: "5fbfe6d74c7b0000cc007c410201", name: "Herança", url: "https://drive.google.com/open?id=10ljb3lmZeZwS2Oshf-BjiYfxemXW6Col", type: "zip"},
+        {id: "5fbfe6d74c7b0000cc007c410202", name: "Agregação", url: "https://drive.google.com/open?id=1P0FTthf5o0yB4Ef60MdLsCvjYeh52QnD", type: "zip"},
+        {id: "5fbfe6d74c7b0000cc007c410203", name: "Classe Abstrata", url: "https://drive.google.com/open?id=1BSD7Q4SFKL-vZzPfu5U1Ln96-V0dz-0Q", type: "zip"},
+        {id: "5fbfe6d74c7b0000cc007c410204", name: "Interface", url: "https://drive.google.com/file/d/1PB2RWixDphNsESawZw8s6RkLJ7-TNABu/view", type: "zip"},
+        {id: "5fbfe6d74c7b0000cc007c410205", name: "Banco de dados", url: "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2016/06/05-Banco-de-Dados.zip", type: "zip"},
+      ]
+    },
+    {
+      id: "5fbfe6d74c7b0000cc007c4103",
+      name: "Videoaulas",
+      schoolSubjectId: "5fbfe6d74c7b0000cc007c41",
+      vertical: true,
+      files: [
+        {id: "5fbfe6d74c7b0000cc007c410301", name: "LIVE #1 Encapsulamento, Herança e Polimorfismo", url: "pO1EZ3WWEEc", youtube: true},
+        {id: "5fbfe6d74c7b0000cc007c410302", name: "LIVE #2 Implementando Exercício Prático de Herança", url: "tQSB2fj_ZCE", youtube: true},
+        {id: "5fbfe6d74c7b0000cc007c410303", name: "LIVE #3 Agregação, Associação e Composição + Exercício Prático", url: "n-rGBH3Iixc", youtube: true},
+        {id: "5fbfe6d74c7b0000cc007c410304", name: "LIVE #4 Classe Abstrata e Interface + Exercício Prático", url: "qd_1u-pzN1I", youtube: true},
+        {id: "5fbfe6d74c7b0000cc007c410305", name: "LIVE #5 Organização do projeto e Menu de opções e submenus com JOptionPane", url: "u51T8vzS_bU", youtube: true},
+        {id: "5fbfe6d74c7b0000cc007c410306", name: "LIVE #6 Refatorando o projeto com Menu de opções", url: "3EX9mAjHGYA", youtube: true},
+        {id: "5fbfe6d74c7b0000cc007c410307", name: "LIVE #7 Projeto Menu de opções. Criando a classe Entrada.java", url: "t2ZwMWlHlE4", youtube: true},
+        {id: "5fbfe6d74c7b0000cc007c410308", name: "LIVE #8 Introdução à banco de dados", url: "dwR4gqdeHLs", youtube: true},
       ]
     },
   ];

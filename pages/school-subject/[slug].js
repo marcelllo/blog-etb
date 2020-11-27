@@ -8,7 +8,7 @@ import mockData from "../../data/data";
 
 import Layout from "../layout";
 
-export default function Name() {
+export default function Slug() {
   const router = useRouter();
   const slug = router.query.slug;
 
@@ -37,40 +37,57 @@ export default function Name() {
 
   return (
     <Layout>
-      {!loading1 && !loading2 && (
-        <>
-          <p className="description sub">
-            {subject.name}
-            <Link href="/">&larr; Voltar</Link>
-          </p>
-          <p>{subject.description}</p>
-        </>
-      )}
+      <div className="page">
+        {!loading1 && !loading2 && (
+          <>
+            <p className="description sub">
+              {subject.name}
+              <Link href="/">&larr; Voltar</Link>
+            </p>
+            <p>{subject.description}</p>
+          </>
+        )}
 
-      {loading1 || loading2 ? (
-        <Loading />
-      ) : (
-        sections.map((section) => (
-          <section
-            className={section.vertical && "vertical"}
-            key={section.id}
-          >
-            <h2>{section.name}</h2>
-            {section.files.map((f) => (
-              <a href={f.url} target="_blank" key={f.id}>
-                <img
-                  loading="lazy"
-                  src={`/icone-${f.type ?? "download"}.png`}
-                  alt=""
-                  width="23"
-                  height="23"
-                />
-                {f.name ? f.name : "Download"}
-              </a>
-            ))}
-          </section>
-        ))
-      )}
+        {loading1 || loading2 ? (
+          <Loading />
+        ) : (
+          sections.map((section) => (
+            <section
+              className={section.vertical && "vertical"}
+              key={section.id}
+            >
+              <h2>{section.name}</h2>
+              {section.files.map((f) =>
+                !f.youtube ? (
+                  <a href={f.url} target="_blank" key={f.id}>
+                    <img
+                      loading="lazy"
+                      src={`/icone-${f.type ?? "download"}.png`}
+                      alt=""
+                      width="23"
+                      height="23"
+                    />
+                    {f.name ? f.name : "Download"}
+                  </a>
+                ) : (
+                  <Link href={`/video/${slug}/${f.url}`} key={f.id}>
+                    <a>
+                      <img
+                        loading="lazy"
+                        src={`/icone-youtube.png`}
+                        alt=""
+                        width="23"
+                        height="23"
+                      />
+                      {f.name ? f.name : "Download"}
+                    </a>
+                  </Link>
+                )
+              )}
+            </section>
+          ))
+        )}
+      </div>
     </Layout>
   );
 }
