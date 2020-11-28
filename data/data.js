@@ -635,7 +635,7 @@ export default function data() {
         {"id": "5fbfe6d74c7b0000cc007c411212", "youtube": true, "name":"Consultas SQL utilizando o comando INNER JOIN","url":"2-LAaqJPeO4"},
         {"id": "5fbfe6d74c7b0000cc007c411213", "youtube": true, "name":"Utilizando taglibs para formatação de dados","url":"sq3S_B_Wutw"},
         {"id": "5fbfe6d74c7b0000cc007c411214", "youtube": true, "name":"Páginas de pesquisa com JSP","url":"lrV8YmIMbbU"},
-        {"id": "5fbfe6d74c7b0000cc007c411215", "youtube": true, "name":"Páginas de pesquisa com Servlets","url":"watch?v=8VztTaONEQ8"}
+        {"id": "5fbfe6d74c7b0000cc007c411215", "youtube": true, "name":"Páginas de pesquisa com Servlets","url":"8VztTaONEQ8"}
       ]
     }
   ];
