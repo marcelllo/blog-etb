@@ -69,7 +69,7 @@ export default function Slug() {
                     />
                     {f.name ? f.name : "Download"}
                   </a>
-                ) : (
+                ) : f.url ? (
                   <Link href={`/video/${slug}/${f.url}`} key={f.id}>
                     <a>
                       <img
@@ -82,6 +82,17 @@ export default function Slug() {
                       {f.name ? f.name : "Download"}
                     </a>
                   </Link>
+                ) : (
+                  <a className="desabilitado">
+                    <img
+                      loading="lazy"
+                      src={`/icone-youtube-d.png`}
+                      alt=""
+                      width="23"
+                      height="23"
+                    />
+                    {f.name}
+                  </a>
                 )
               )}
             </section>

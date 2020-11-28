@@ -483,7 +483,7 @@ export default function data() {
     },
     {
       id: "5fbfe6d74c7b0000cc007c4103",
-      name: "Videoaulas",
+      name: "Orientação à Objetos - Videoaulas",
       schoolSubjectId: "5fbfe6d74c7b0000cc007c41",
       vertical: true,
       files: [
@@ -495,8 +495,76 @@ export default function data() {
         {id: "5fbfe6d74c7b0000cc007c410306", name: "LIVE #6 Refatorando o projeto com Menu de opções", url: "3EX9mAjHGYA", youtube: true},
         {id: "5fbfe6d74c7b0000cc007c410307", name: "LIVE #7 Projeto Menu de opções. Criando a classe Entrada.java", url: "t2ZwMWlHlE4", youtube: true},
         {id: "5fbfe6d74c7b0000cc007c410308", name: "LIVE #8 Introdução à banco de dados", url: "dwR4gqdeHLs", youtube: true},
+        {id: "5fbfe6d74c7b0000cc007c410308", name: "(Editando… aguarde!) LIVE #9 Banco de dados: Padrão DAO com exemplo de CRUD", youtube: true},
+        {id: "5fbfe6d74c7b0000cc007c410308", name: "(Editando… aguarde!) LIVE #9 Criando o projeto CRUD de Pessoa", youtube: true},
       ]
     },
+    {
+      id: "5fbfe6d74c7b0000cc007c4104",
+      name: "Banco de dados - Videoaulas",
+      schoolSubjectId: "5fbfe6d74c7b0000cc007c41",
+      vertical: true,
+      files: [
+        {"id": "5fbfe6d74c7b0000cc007c410401", youtube: true, "name":"Criando o banco de dados","url":"JzHcHljDn_Q"},
+        {"id": "5fbfe6d74c7b0000cc007c410402", youtube: true, "name":"Criando Projeto e adicionando Driver JDBC do MySQL","url":"KghqsCDAxNI"},
+        {"id": "5fbfe6d74c7b0000cc007c410403", youtube: true, "name":"Criando as entidades","url":"x46WaWrVfjk"},
+        {"id": "5fbfe6d74c7b0000cc007c410404", youtube: true, "name":"Criando interface de configuração do banco de dados","url":"efrW3lHb_X4"},
+        {"id": "5fbfe6d74c7b0000cc007c410405", youtube: true, "name":"Gerente de Conexão","url":"sPxENFkBCz0"},
+        {"id": "5fbfe6d74c7b0000cc007c410406", youtube: true, "name":"ContatoDAO – Método listar","url":"aCbd8UMqZjw"},
+        {"id": "5fbfe6d74c7b0000cc007c410407", youtube: true, "name":"ContatoDAO – Método inserir","url":"cCE0hp61Hlo"},
+        {"id": "5fbfe6d74c7b0000cc007c410408", youtube: true, "name":"ContatoDAO – Método alterar","url":"zaF9fonTRF0"},
+        {"id": "5fbfe6d74c7b0000cc007c410409", youtube: true, "name":"ContatoDAO – Método excluir","url":"m3u2xvLhdEk"},
+        {"id": "5fbfe6d74c7b0000cc007c410410", youtube: true, "name":"Passo-a-passo – TesteListar.java","url":"QFsimSf5cvw"},
+        {"id": "5fbfe6d74c7b0000cc007c410411", youtube: true, "name":"TesteListar.java","url":"pH2sFzZV340"},
+        {"id": "5fbfe6d74c7b0000cc007c410412", youtube: true, "name":"TesteInserir.java","url":"JM2TPnvt-Hg"},
+        {"id": "5fbfe6d74c7b0000cc007c410413", youtube: true, "name":"TesteAlterar.java","url":"GZI2904Ddok"},
+        {"id": "5fbfe6d74c7b0000cc007c410414", youtube: true, "name":"TesteExcluir.java","url":"CwuieoTd398"},
+        {"id": "5fbfe6d74c7b0000cc007c410415", youtube: true, "name":"CRUD Contatos com JFrame – Parte 1 – Botão Listar","url":"JaLF_vU6lO4"},
+        {"id": "5fbfe6d74c7b0000cc007c410416", youtube: true, "name":"CRUD Contatos com JFrame – Parte 2 – Botão Excluir","url":"zQ7TAc37iAw"},
+        {"id": "5fbfe6d74c7b0000cc007c410417", youtube: true, "name":"CRUD Contatos com JFrame – Parte 3 – Botão Salvar","url":"riFoTUh9fp4"},
+        {"id": "5fbfe6d74c7b0000cc007c410418", youtube: true, "name":"CRUD Contatos com JFrame – Parte 4 – Tela de pesquisa e listagem","url":"XKj_00U2hHM"},
+        {"id": "5fbfe6d74c7b0000cc007c410419", youtube: true, "name":"CRUD Contatos com JFrame – Tela Pesquisar – Botão Excluir","url":"Di5qR3D_gOM"},
+        {"id": "5fbfe6d74c7b0000cc007c410412", youtube: true, "name":"CRUD Contatos com JFrame – Tela Pesquisar – Ajuste na lógica de exclusão","url":"WGVQTRhEHnY"},
+        {"id": "5fbfe6d74c7b0000cc007c410421", youtube: true, "name":"CRUD Contatos com JFrame – Tela Pesquisar – Botão Novo","url":"pNU56QsahxY"},
+        {"id": "5fbfe6d74c7b0000cc007c410422", youtube: true, "name":"CRUD Contatos com JFrame – Tela Pesquisar – Botão Alterar","url":"a8i-c5rG6eU"},
+      ]
+    },
+    {
+      id: "5fbfe6d74c7b0000cc007c4105",
+      name: "Interface Gráfica - Videoaulas",
+      schoolSubjectId: "5fbfe6d74c7b0000cc007c41",
+      vertical: true,
+      files: [
+        {"id": "5fbfe6d74c7b0000cc007c410501", youtube: true, "name":"JButton, JLabel, JTextField e JOptionPane","url":"X4dPOHDm3Hk"},
+        {"id": "5fbfe6d74c7b0000cc007c410502", youtube: true, "name":"Obtendo valores do JTextField para formatos String, double e int","url":"hzSFCAye4qM"},
+        {"id": "5fbfe6d74c7b0000cc007c410503", youtube: true, "name":"Calculando INSS do salário líquido do funcionário","url":"rA0hv2jcoQs"},
+        {"id": "5fbfe6d74c7b0000cc007c410504", youtube: true, "name":"Abrindo um formulário a partir de um botão","url":"SiO0NjBBm7w"},
+        {"id": "5fbfe6d74c7b0000cc007c410505", youtube: true, "name":"(Editando… aguarde!) Criando tabela de dados com JTable"},
+        {"id": "5fbfe6d74c7b0000cc007c410506", youtube: true, "name":"(Editando… aguarde!) Algumas configurações do JTable e habilitando/desabilitando JButton"},
+        {"id": "5fbfe6d74c7b0000cc007c410507", youtube: true, "name":"(Editando… aguarde!) Excluindo dados da tabela"},
+        {"id": "5fbfe6d74c7b0000cc007c410508", youtube: true, "name":"(Editando… aguarde!) Alterando dados da tabela"},
+        {"id": "5fbfe6d74c7b0000cc007c410509", youtube: true, "name":"(Editando… aguarde!) Adicionando máscara de data, telefone e CPF"},
+      ]
+    },
+    {
+      id: "5fbfe6d74c7b0000cc007c4106",
+      name: "Arquivos",
+      schoolSubjectId: "5fbfe6d74c7b0000cc007c41",
+      files: [
+        {id: "5fbfe6d74c7b0000cc007c410601", "name": "Script SQL", "type": "zip", "url": "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2018/05/java2.zip"},
+        {id: "5fbfe6d74c7b0000cc007c410602", "name": "Exercício - Banco de dados", "type": "zip", "url": "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2016/06/05-Exercicio-Banco-De-Dados.pdf"},
+      ]
+    },
+    {
+      id: "5fbfe6d74c7b0000cc007c4107",
+      name: "Arquivos",
+      schoolSubjectId: "5fbfe6d74c7b0000cc007c41",
+      files: [
+        {id: "5fbfe6d74c7b0000cc007c410701", "name": "MER", "url": "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2018/06/MERLocadora.png"},
+        {id: "5fbfe6d74c7b0000cc007c410701", "name": "Script SQL", "type": "zip", "url": "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2018/06/locadora-sql.zip"},
+        {id: "5fbfe6d74c7b0000cc007c410701", "name": "Diagrama de classe", "url": "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2018/06/DiagramaDeClasse.png"},
+      ]
+    }
   ];
 
   const getAllSchoolSubjects = () => {

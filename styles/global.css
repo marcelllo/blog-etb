@@ -209,6 +209,11 @@ section.vertical {
   flex-direction: column;
 }
 
+a.desabilitado {
+  color: #333;
+  font-weight: 500;
+}
+
 .video header {
   display: flex;
   height: 130px;
@@ -251,6 +256,35 @@ section.vertical {
   height: 100%;
 }
 
+@media (max-width: 820px) {
+  
+  .video header {
+    display: flex;
+    height: 80px;
+    align-items: center;
+  }
+
+  .video header img {
+    height: 60px;
+  }
+  .video header .title {
+    font-size: 1rem;
+  }
+  
+  .video header a {
+    padding-right: 5px;
+    font-size: 0.8rem;
+  }
+  
+  .video main {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: calc(100vh - 80px);
+  }
+
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
@@ -288,6 +322,5 @@ section.vertical {
 
   .title p.description {
     font-size: 1rem;
-  }
-  
+  } 
 }
