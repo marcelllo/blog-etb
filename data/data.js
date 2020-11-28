@@ -564,6 +564,79 @@ export default function data() {
         {id: "5fbfe6d74c7b0000cc007c410701", "name": "Script SQL", "type": "zip", "url": "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2018/06/locadora-sql.zip"},
         {id: "5fbfe6d74c7b0000cc007c410701", "name": "Diagrama de classe", "url": "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2018/06/DiagramaDeClasse.png"},
       ]
+    },
+    {
+      id: "5fbfe6d74c7b0000cc007c4108",
+      name: "Exercícios",
+      schoolSubjectId: "5fbfe6d74c7b0000cc007c42",
+      files: [
+        {id: "5fbfe6d74c7b0000cc007c410801", "type": "pdf", "name": "Exercício 1 – JSP e Servlets", "url": "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2017/08/EXERC%C3%8DCIOS-JSP-e-Servlet.pdf"},
+        {id: "5fbfe6d74c7b0000cc007c410801", "type": "pdf", "name": "Exercício 2 – CRUD Empregado", "url": "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2017/09/Atividade-II-Instru%C3%A7%C3%B5es.pdf"},
+        {id: "5fbfe6d74c7b0000cc007c410801", "type": "zip", "name": "CRUD Empregado", "url": "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2017/09/CRUD-Empregado.zip"},
+      ]
+    },
+    {
+      id: "5fbfe6d74c7b0000cc007c4109",
+      name: "Exemplos práticos",
+      schoolSubjectId: "5fbfe6d74c7b0000cc007c42",
+      vertical: true,
+      files: [
+        {id: "5fbfe6d74c7b0000cc007c410901", "type": "zip", "name": "SQL do banco de dados do projeto Agenda", "url": "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2016/06/AgendaSQL.zip"},
+        {id: "5fbfe6d74c7b0000cc007c410901", "type": "zip", "name": "Projeto – Aula 01", "url": "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2017/08/Projeto-Aula01.zip"},
+        {id: "5fbfe6d74c7b0000cc007c410901", "type": "zip", "name": "Projeto – Aula 02", "url": "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2017/08/Projeto-Aula02.zip"},
+        {id: "5fbfe6d74c7b0000cc007c410901", "type": "zip", "name": "Projeto Agenda – Parte 1", "url": "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2017/08/Agenda-Parte1.zip"},
+        {id: "5fbfe6d74c7b0000cc007c410901", "type": "zip", "name": "Projeto Agenda – Parte 2", "url": "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2016/06/Agenda-Parte2.zip"},
+        {id: "5fbfe6d74c7b0000cc007c410901", "type": "zip", "name": "Projeto Agenda – Parte 3 - Cadastrando em tabela associativa", "url": "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2016/06/Agenda-Parte3.zip"},
+        {id: "5fbfe6d74c7b0000cc007c410901", "type": "zip", "name": "Projeto Agenda – Parte 4 - Mostrando um menu dinâmico", "url": "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2016/06/Agenda-Parte4.zip"},
+        {id: "5fbfe6d74c7b0000cc007c410901", "type": "zip", "name": "Projeto Agenda – Parte 5 - Cadastramento de Perfil e acesso aos menus", "url": "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2016/06/Agenda-Parte5.zip"},
+        {id: "5fbfe6d74c7b0000cc007c410901", "type": "zip", "name": "Projeto Agenda – Parte 6 – Ajustando cadastramento cadastro de menu ao perfil", "url": "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2016/06/Agenda-Parte6.zip"},
+        {id: "5fbfe6d74c7b0000cc007c410901", "type": "zip", "name": "Projeto Agenda – Parte 7 - Validação de acesso às páginas via URL.", "url": "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2016/06/Agenda-Parte7.zip"},
+        {id: "5fbfe6d74c7b0000cc007c410901", "type": "zip", "name": "Exemplo de Upload (Envio de arquivos)", "url": "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2017/11/ExemploUpload.zip"},
+      ]
+    },
+    {
+      id: "5fbfe6d74c7b0000cc007c4110",
+      name: "Diversos",
+      schoolSubjectId: "5fbfe6d74c7b0000cc007c42",
+      files: [
+        {"id": "5fbfe6d74c7b0000cc007c411001", "type": "zip", "name": "Template AdminLTE", url: "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2017/08/AdminLTE-2.3.11.zip"}
+      ]
+    },
+    {
+      id: "5fbfe6d74c7b0000cc007c4111",
+      name: "Apostilas e Slides",
+      schoolSubjectId: "5fbfe6d74c7b0000cc007c42",
+      vertical: true,
+      files: [
+        {"id": "5fbfe6d74c7b0000cc007c411101", "type": "ppt", "name": "Aula 01 - Aplicação Web", url: "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2016/06/Aula-01.pptx"},
+        {"id": "5fbfe6d74c7b0000cc007c411101", "type": "ppt", "name": "Aula 02 - Servlets", url: "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2016/06/Aula-02.pptx"},
+        {"id": "5fbfe6d74c7b0000cc007c411101", "type": "pdf", "name": "Aula 02 – Passo-a-Passo criação de Servlets.", url: "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2016/06/Aula02-Passo-a-Passo-Servlet.pdf"},
+        {"id": "5fbfe6d74c7b0000cc007c411101", "type": "ppt", "name": "Aula 03 – Java Server Pages (JSP)", url: "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2016/06/Aula-03.pptx"},
+        {"id": "5fbfe6d74c7b0000cc007c411101", "type": "ppt", "name": "Aula 04 – TagLibs", url: "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2016/06/Aula-04.pptx"},
+      ]
+    },
+    {
+      id: "5fbfe6d74c7b0000cc007c4112",
+      name: "Videoaulas",
+      schoolSubjectId: "5fbfe6d74c7b0000cc007c42",
+      vertical: true,
+      files: [
+        {"id": "5fbfe6d74c7b0000cc007c411201", "youtube": true, "name":"Configuração do Ambiente de Desenvolvimento","url":"lh5huA_g1o4"},
+        {"id": "5fbfe6d74c7b0000cc007c411202", "youtube": true, "name":"Introdução ao JSP ","url":"x10p1muqpg4"},
+        {"id": "5fbfe6d74c7b0000cc007c411203", "youtube": true, "name":"Introdução ao Servlet","url":"eP15KujUUoA"},
+        {"id": "5fbfe6d74c7b0000cc007c411204", "youtube": true, "name":"Arquivo web.xml e conversão de tipos","url":"M7SELteYVfo"},
+        {"id": "5fbfe6d74c7b0000cc007c411205", "youtube": true, "name":"Banco de dados com JAVA","url":"PpK98xQqA10"},
+        {"id": "5fbfe6d74c7b0000cc007c411206", "youtube": true, "name":"JSP e Classes DAO","url":"UgP9lsiDWI8"},
+        {"id": "5fbfe6d74c7b0000cc007c411207", "youtube": true, "name":"MVC e Exemplo de Inclusão de dados","url":"McOgivYznsA"},
+        {"id": "5fbfe6d74c7b0000cc007c411208", "youtube": true, "name":"MVC e Exemplo de Alteração e exclusão de dados","url":"efWt0cVmSuc"},
+        {"id": "5fbfe6d74c7b0000cc007c411209", "youtube": true, "name":"Autenticação de usuários","url":"AdoCPpfkI5Y"},
+        {"id": "5fbfe6d74c7b0000cc007c411210", "youtube": true, "name":"Gravação de Datas – Classe SimpleDateFormat","url":"xNvKtvASNFI"},
+        {"id": "5fbfe6d74c7b0000cc007c411211", "youtube": true, "name":"Gravação dados em tabelas associativas","url":"gyEOOFGo2zY"},
+        {"id": "5fbfe6d74c7b0000cc007c411212", "youtube": true, "name":"Consultas SQL utilizando o comando INNER JOIN","url":"2-LAaqJPeO4"},
+        {"id": "5fbfe6d74c7b0000cc007c411213", "youtube": true, "name":"Utilizando taglibs para formatação de dados","url":"sq3S_B_Wutw"},
+        {"id": "5fbfe6d74c7b0000cc007c411214", "youtube": true, "name":"Páginas de pesquisa com JSP","url":"lrV8YmIMbbU"},
+        {"id": "5fbfe6d74c7b0000cc007c411215", "youtube": true, "name":"Páginas de pesquisa com Servlets","url":"watch?v=8VztTaONEQ8"}
+      ]
     }
   ];
 
