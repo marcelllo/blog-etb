@@ -6,37 +6,34 @@ import Loading from "./layout/loading";
 import api from "../data/api";
 import mockData from "../data/data";
 
-
-export default function Index() {
-  const [subjects, setSubjects] = useState([]);
-  const [loading, setLoading] = useState(true);
-  
-  useEffect(() => {
-    const subjects = mockData().getAllSchoolSubjects();
-    setSubjects(subjects);
-    setLoading(false);
-    // api.get('/subjects').then(res => {
-    //     setSubjects(res.data);
-    //     setLoading(false);
-    // });    
-  }, []);
-  
+function Index({ subjects }) {
+  const [loading, setLoading] = useState(false);
 
   return (
     <Layout>
       <div className="grid">
-        {loading ? 
+        {loading ? (
           <Loading />
-        :
-        subjects.map((subject) => (
-          <Link href={"/school-subject/" + subject.slug} key={subject.id}>
-            <div className="card link">
-              <h3>{subject.name} &rarr;</h3>
-              <p>{subject.description}</p>
-            </div>
-          </Link>
-        ))}
+        ) : (
+          subjects.map((subject) => (
+            <Link href={"/school-subject/" + subject.slug} key={subject.id}>
+              <div className="card link">
+                <h3>{subject.name} &rarr;</h3>
+                <p>{subject.description}</p>
+              </div>
+            </Link>
+          ))
+        )}
       </div>
     </Layout>
   );
 }
+
+Index.getInitialProps = async (ctx) => {
+  const res = await api.get("/subjects");
+  const data = await res.data;
+
+  return { subjects: data };
+};
+
+export default Index;
