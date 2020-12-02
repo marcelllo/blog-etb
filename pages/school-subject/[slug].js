@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Loading from "../layout/loading";
 
-import api from "../../data/api";
 import mockData from "../../data/data";
 
 import Layout from "../layout";
@@ -14,8 +13,6 @@ export default function Slug() {
 
   const [loading1, setLoading1] = useState(true);
   const [loading2, setLoading2] = useState(true);
-  // const [subject, setSubject] = useState({});
-  // const [sections, setSections] = useState([]);
 
   const subject = mockData().getSchoolSubject(slug) || {};
   const sections = mockData().getSections(subject.id);
@@ -23,16 +20,6 @@ export default function Slug() {
   useEffect(() => {
     setLoading1(false);
     setLoading2(false);
-
-    // api.get(`/subjects/${slug}`).then(res => {
-    //   setSubject(res.data);
-    //   setLoading1(false);
-    // });
-
-    // api.get(`/subjects/${slug}/sections`).then(res => {
-    //   setSections(res.data);
-    //   setLoading2(false);
-    // });
   }, []);
 
   return (
@@ -58,7 +45,7 @@ export default function Slug() {
             >
               <h2>{section.name}</h2>
               {section.files.map((f) =>
-                !f.youtube ? (
+                f.type !== "youtube" ? (
                   <a href={f.url} target="_blank" key={f.id}>
                     <img
                       loading="lazy"
@@ -83,7 +70,7 @@ export default function Slug() {
                     </a>
                   </Link>
                 ) : (
-                  <a className="desabilitado">
+                  <a className="desabilitado" key={f.id}>
                     <img
                       loading="lazy"
                       src={`/icone-youtube-d.png`}

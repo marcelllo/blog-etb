@@ -1,13 +1,8 @@
-import { useRouter } from "next/router";
-import Head from "next/head";
 import Link from "next/link";
 
-import mockData from "../../../data/data";
+function Video( {query} ) {
 
-export default function Video() {
-  const router = useRouter();
-
-  const { slug, video } = router.query;
+  const { slug, video } = query;
 
   return (
     <div className="video">
@@ -35,3 +30,9 @@ export default function Video() {
     </div>
   );
 }
+
+Video.getInitialProps = (ctx) => {
+  return { query: ctx.query }
+}
+
+export default Video
