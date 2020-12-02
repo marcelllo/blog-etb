@@ -1,8 +1,4 @@
-import { useRouter } from "next/router";
-import Head from "next/head";
 import Link from "next/link";
-
-import mockData from "../../../data/data";
 
 function Video({ query }) {
   

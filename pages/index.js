@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Layout from "./layout";
-import Loading from "./layout/loading";
 
 import api from "../data/api";
 
@@ -29,7 +28,7 @@ Index.getInitialProps = async (ctx) => {
   const data = await res.data;
 
   return { subjects: data };
-  
+
 };
 
 export default Index;

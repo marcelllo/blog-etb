@@ -1,10 +1,6 @@
-import { useRouter } from "next/router";
-import { useState, useEffect } from "react";
 import Link from "next/link";
-import Loading from "../layout/loading";
 
 import api from "../../data/api";
-import mockData from "../../data/data";
 
 import Layout from "../layout";
 

@@ -1,13 +1,6 @@
-import Head from "next/head";
-
 export default function Layout({ children }) {
   return (
     <div className="container">
-      <Head>
-        <title>Professor Marcelo</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <main>
         <h1 className="title">
           <img src="/foto.png" alt="Vercel Logo" className="logo" />
