@@ -8,37 +8,12 @@ import mockData from "../../data/data";
 
 import Layout from "../layout";
 
-export default function Slug() {
-  const router = useRouter();
-  const slug = router.query.slug;
-
-  const [loading1, setLoading1] = useState(true);
-  const [loading2, setLoading2] = useState(true);
-  // const [subject, setSubject] = useState({});
-  // const [sections, setSections] = useState([]);
-
-  const subject = mockData().getSchoolSubject(slug) || {};
-  const sections = mockData().getSections(subject.id);
-
-  useEffect(() => {
-    setLoading1(false);
-    setLoading2(false);
-
-    // api.get(`/subjects/${slug}`).then(res => {
-    //   setSubject(res.data);
-    //   setLoading1(false);
-    // });
-
-    // api.get(`/subjects/${slug}/sections`).then(res => {
-    //   setSections(res.data);
-    //   setLoading2(false);
-    // });
-  }, []);
-
+function Slug({ subject, sections }) {
+  
   return (
     <Layout>
       <div className="page">
-        {!loading1 && !loading2 && (
+        {(
           <>
             <p className="description sub">
               {subject.name}
@@ -48,17 +23,14 @@ export default function Slug() {
           </>
         )}
 
-        {loading1 || loading2 ? (
-          <Loading />
-        ) : (
-          sections.map((section) => (
+        {sections.map((section) => (
             <section
               className={section.vertical && "vertical"}
               key={section.id}
             >
               <h2>{section.name}</h2>
               {section.files.map((f) =>
-                !f.youtube ? (
+                f.type !== 'youtube' ? (
                   <a href={f.url} target="_blank" key={f.id}>
                     <img
                       loading="lazy"
@@ -70,7 +42,7 @@ export default function Slug() {
                     {f.name ? f.name : "Download"}
                   </a>
                 ) : f.url ? (
-                  <Link href={`/video/${slug}/${f.url}`} key={f.id}>
+                  <Link href={`/video/${section.slug}/${f.url}`} key={f.id}>
                     <a>
                       <img
                         loading="lazy"
@@ -96,10 +68,9 @@ export default function Slug() {
                 )
               )}
             </section>
-          ))
-        )}
+        ))}
 
-        {!loading1 && !loading2 && (
+        {(
           <>
             <p className="description sub">
               {subject.name}
@@ -111,3 +82,19 @@ export default function Slug() {
     </Layout>
   );
 }
+
+Slug.getInitialProps = async (ctx) => {
+
+  const slug = ctx.query.slug;
+
+  const subjectQuery = await api.get(`/subjects/${slug}`);
+  const subject = await subjectQuery.data;
+
+  const sectionsQuery = await api.get(`/subjects/${slug}/sections`);
+  const sections = sectionsQuery.data;
+
+
+  return { subject, sections };
+}
+
+export default Slug
