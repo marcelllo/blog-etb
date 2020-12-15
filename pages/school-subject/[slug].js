@@ -1,32 +1,36 @@
 import Link from "next/link";
+import { useRouter } from "react";
 
 import api from "../../data/api";
 
 import Layout from "../layout";
 
-function Slug({ subject, sections }) {
-  
+function Slug(props) {
+
+  const { subject, sections, slug } = props;
+
   return (
     <Layout>
       <div className="page">
-        {(
+        {
           <>
             <p className="description sub">
-              {subject.name}
+              {subject && subject.name}
               <Link href="/">&larr; Voltar</Link>
             </p>
-            <p>{subject.description}</p>
+            <p>{subject && subject.description}</p>
           </>
-        )}
+        }
 
-        {sections.map((section) => (
+        {sections &&
+          sections.map((section) => (
             <section
               className={section.vertical && "vertical"}
               key={section.id}
             >
               <h2>{section.name}</h2>
               {section.files.map((f) =>
-                f.type !== 'youtube' ? (
+                f.type !== "youtube" ? (
                   <a href={f.url} target="_blank" key={f.id}>
                     <img
                       loading="lazy"
@@ -38,7 +42,7 @@ function Slug({ subject, sections }) {
                     {f.name ? f.name : "Download"}
                   </a>
                 ) : f.url ? (
-                  <Link href={`/video/${section.slug}/${f.url}`} key={f.id}>
+                  <Link href={`/video/${slug}/${f.url}`} key={f.id}>
                     <a>
                       <img
                         loading="lazy"
@@ -51,7 +55,7 @@ function Slug({ subject, sections }) {
                     </a>
                   </Link>
                 ) : (
-                  <a className="desabilitado">
+                  <a className="desabilitado" key={f.id}>
                     <img
                       loading="lazy"
                       src={`/icone-youtube-d.png`}
@@ -64,24 +68,34 @@ function Slug({ subject, sections }) {
                 )
               )}
             </section>
-        ))}
+          ))}
 
-        {(
+        {
           <>
             <p className="description sub">
-              {subject.name}
+              {subject && subject.name}
               <Link href="/">&larr; Voltar</Link>
             </p>
           </>
-        )}
+        }
       </div>
     </Layout>
   );
 }
 
-Slug.getInitialProps = async (ctx) => {
+export async function getStaticPaths() {
+  const res = await api.get("/subjects");
+  const subjects = await res.data;
 
-  const slug = ctx.query.slug;
+  const paths = subjects.map((subject) => ({
+    params: { slug: subject.slug },
+  }));
+
+  return { paths, fallback: false };
+}
+
+export async function getStaticProps(ctx) {
+  const slug = ctx.params.slug;
 
   const subjectQuery = await api.get(`/subjects/${slug}`);
   const subject = await subjectQuery.data;
@@ -89,8 +103,10 @@ Slug.getInitialProps = async (ctx) => {
   const sectionsQuery = await api.get(`/subjects/${slug}/sections`);
   const sections = sectionsQuery.data;
 
-
-  return { subject, sections };
+  return {
+    props: { subject, sections, slug },
+    revalidate: 5,
+  };
 }
 
-export default Slug
+export default Slug;

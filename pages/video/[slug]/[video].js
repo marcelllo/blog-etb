@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 function Video({ query }) {
-  
   const { slug, video } = query;
 
   return (
@@ -12,19 +11,24 @@ function Video({ query }) {
           Professor Marcelo Santos
           <p className="description">Escola Técnica de Brasília - ETB</p>
         </h1>
-        <Link href={`/school-subject/${slug}`} class="back">&larr; Voltar</Link>
+        <Link href={`/school-subject/${slug}`} class="back">
+          &larr; Voltar
+        </Link>
       </header>
       <main>
         <iframe
           src={`https://www.youtube.com/embed/${video}`}
-          allow={"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"}
+          allow={
+            "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          }
           allowFullScreen={true}
         ></iframe>
       </main>
 
       <style jsx>{`
-        html, body {
-            overflow: hidden;
+        html,
+        body {
+          overflow: hidden;
         }
       `}</style>
     </div>
@@ -32,9 +36,7 @@ function Video({ query }) {
 }
 
 Video.getInitialProps = (ctx) => {
+  return { query: ctx.query };
+};
 
-  return { query: ctx.query }
-
-}
-
-export default Video
+export default Video;
