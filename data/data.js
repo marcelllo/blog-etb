@@ -307,10 +307,10 @@ export default function data() {
       vertical: true,
       schoolSubjectId: "5fbfe6d74c7b0000cc007c40",
       files: [
-        {"id": "5fbfe6d74c7b0000cc007c400301", "type": "video", "name":"Apresentação","url":"https://goo.gl/QjeuUs"},
-        {"id": "5fbfe6d74c7b0000cc007c400302", "type": "video", "name":"NetBeans","url":"https://goo.gl/xUeaot"},
-        {"id": "5fbfe6d74c7b0000cc007c400303", "type": "video", "name":"Fundamentos","url":"https://goo.gl/aWXlv7"},
-        {"id": "5fbfe6d74c7b0000cc007c400304", "type": "video", "name":"Algoritmos","url":"https://goo.gl/7nIzWA"}
+        {"id": "5fbfe6d74c7b0000cc007c400301", "type": "video", "name":"Apresentação","url":"https://drive.google.com/file/d/1irwq4lDiIHvfQRCiJxfScrQ6RDiSeRUO/view?usp=sharing"},
+        {"id": "5fbfe6d74c7b0000cc007c400302", "type": "video", "name":"NetBeans","url":"https://drive.google.com/file/d/1riHBFtTrNXzvBmIi7jfNJFKnTUQkdKhg/view?usp=sharing"},
+        {"id": "5fbfe6d74c7b0000cc007c400303", "type": "video", "name":"Fundamentos","url":"https://drive.google.com/file/d/1t690Uab_RV3ErCez5kAHAo2INCddv7Nu/view?usp=sharing"},
+        {"id": "5fbfe6d74c7b0000cc007c400304", "type": "video", "name":"Algoritmos","url":"https://drive.google.com/file/d/1i-OQeEsI2XIt5XyHyGN3LKhsiMCCNCKb/view?usp=sharing"}
       ]
     },
     {
@@ -338,9 +338,9 @@ export default function data() {
       vertical: true,
       schoolSubjectId: "5fbfe6d74c7b0000cc007c40",
       files: [
-        {"id": "5fbfe6d74c7b0000cc007c400501", "type": "video", "name":"Apresentação", "url":"https://goo.gl/vO70jV"},
-        {"id": "5fbfe6d74c7b0000cc007c400502", "type": "video", "name":"Estrutura Condicional","url":"https://goo.gl/iDAU3I"},
-        {"id": "5fbfe6d74c7b0000cc007c400503", "type": "video", "name":"Estrutura de Repetição","url":"https://goo.gl/95mmCd"},
+        {"id": "5fbfe6d74c7b0000cc007c400501", "type": "video", "name":"Apresentação", "url":"https://drive.google.com/file/d/1BhqYKZrWU89a1MUF01auBt1q4rDldXR8/view?usp=sharing"},
+        {"id": "5fbfe6d74c7b0000cc007c400502", "type": "video", "name":"Estrutura Condicional","url":"https://drive.google.com/file/d/1FeNkXwaaLHyitQJ6l0kBmT14KkwMxQ_l/view?usp=sharing"},
+        {"id": "5fbfe6d74c7b0000cc007c400503", "type": "video", "name":"Estrutura de Repetição","url":"https://drive.google.com/file/d/1YiMJOlpVX0PcqG5D5TaBx3MEVvEeFb8f/view?usp=sharing"},
       ]
     },
     {
@@ -368,14 +368,14 @@ export default function data() {
       vertical: true,
       schoolSubjectId: "5fbfe6d74c7b0000cc007c40",
       files: [
-        {"id": "5fbfe6d74c7b0000cc007c400701", "type": "video", "name":"Apresentação","url":"https://goo.gl/DC5nBW"},
-        {"id": "5fbfe6d74c7b0000cc007c400702", "type": "video", "name":"Classes e Objetos","url":"https://goo.gl/jd7tmL"},
-        {"id": "5fbfe6d74c7b0000cc007c400703", "type": "video", "name":"Código: Classes e Objetos","url":"https://goo.gl/Z9sk4O"},
-        {"id": "5fbfe6d74c7b0000cc007c400704", "type": "video", "name":"Métodos","url":"https://goo.gl/pR3aa5"},
-        {"id": "5fbfe6d74c7b0000cc007c400705", "type": "video", "name":"Construtores","url":"https://goo.gl/rF7lHc"},
-        {"id": "5fbfe6d74c7b0000cc007c400706", "type": "video", "name":"Encapsulamento","url":"https://goo.gl/3vYfz0"},
-        {"id": "5fbfe6d74c7b0000cc007c400707", "type": "video", "name":"Resumo dos conceitos","url":"https://goo.gl/rdGwyM"},
-        {"id": "5fbfe6d74c7b0000cc007c400708", "type": "video", "name":"Exemplos finais","url":"https://goo.gl/J5YGNA"}
+        {"id": "5fbfe6d74c7b0000cc007c400701", "type": "video", "name":"Apresentação","url":"https://drive.google.com/file/d/14YBumsC6LRKU048zst9bwhv_QqQdD5i6/view?usp=sharing"},
+        {"id": "5fbfe6d74c7b0000cc007c400702", "type": "video", "name":"Classes e Objetos","url":"https://drive.google.com/file/d/1kIh4Pd7BO_C1OKx5pkWSwxHzvnkwfQYX/view?usp=sharing"},
+        {"id": "5fbfe6d74c7b0000cc007c400703", "type": "video", "name":"Código: Classes e Objetos","url":"https://drive.google.com/file/d/1PSPLpUNy1zyzGwq8KzD1u15fGW5UsBrW/view?usp=sharing"},
+        {"id": "5fbfe6d74c7b0000cc007c400704", "type": "video", "name":"Métodos","url":"https://drive.google.com/file/d/1p7-ygg7RPxpgEGLuTsrjbQxi3z5BE0d8/view?usp=sharing"},
+        {"id": "5fbfe6d74c7b0000cc007c400705", "type": "video", "name":"Construtores","url":"https://drive.google.com/file/d/1oNVK7GmGz2JSgiYW1x67x4igYSweySnQ/view?usp=sharing"},
+        {"id": "5fbfe6d74c7b0000cc007c400706", "type": "video", "name":"Encapsulamento","url":"https://drive.google.com/file/d/1PTYrH1xwP1X0hSaPLlDbxXmVFab8Xytm/view?usp=sharing"},
+        {"id": "5fbfe6d74c7b0000cc007c400707", "type": "video", "name":"Resumo dos conceitos","url":"https://drive.google.com/file/d/1zRgdcHLshvAfNu1RqEZcgl66cNO9ZNsn/view?usp=sharing"},
+        {"id": "5fbfe6d74c7b0000cc007c400708", "type": "video", "name":"Exemplos finais","url":"https://drive.google.com/file/d/1MoHxYK6I1sbeCwYDR3tQ5WI6OARp59JN/view?usp=sharing"}
       ]
     },
     {
@@ -403,7 +403,7 @@ export default function data() {
       vertical: true,
       schoolSubjectId: "5fbfe6d74c7b0000cc007c40",
       files: [
-        {"id": "5fbfe6d74c7b0000cc007c400901", "type": "video", "name":"Herança", "url":"https://goo.gl/koHxjB"},
+        {"id": "5fbfe6d74c7b0000cc007c400901", "type": "video", "name":"Herança", "url":"https://drive.google.com/file/d/1VBFcArJinG5FkA6cW0rMP9gHsoqWKfP_/view?usp=sharing"},
       ]
     },
     {
@@ -425,11 +425,11 @@ export default function data() {
       vertical: true,
       schoolSubjectId: "5fbfe6d74c7b0000cc007c40",
       files: [
-        {"id": "5fbfe6d74c7b0000cc007c401101", "type":"video", "name":"Aplicação de conceitos de OO","url":"https://goo.gl/br5eva"},
-        {"id": "5fbfe6d74c7b0000cc007c401102", "type":"video", "name":"Sobrecarga de métodos – parte 1","url":"https://goo.gl/S4Xpv9"},
-        {"id": "5fbfe6d74c7b0000cc007c401103", "type":"video", "name":"Sobrecarga de métodos – parte 2","url":"https://goo.gl/AZLiSs"},
-        {"id": "5fbfe6d74c7b0000cc007c401104", "type":"video", "name":"Sobrecarga de métodos – parte 3","url":"https://goo.gl/oBKcA8"},
-        {"id": "5fbfe6d74c7b0000cc007c401105", "type":"video", "name":"Sobrecarga de métodos – parte 4","url":"https://goo.gl/t5guBi"}
+        {"id": "5fbfe6d74c7b0000cc007c401101", "type":"video", "name":"Aplicação de conceitos de OO","url":"https://drive.google.com/file/d/1yKyaVeHTCdPaq3GNnmJHvy16mmWy4VMh/view?usp=sharing"},
+        {"id": "5fbfe6d74c7b0000cc007c401102", "type":"video", "name":"Sobrecarga de métodos – parte 1","url":"https://drive.google.com/file/d/1DbectGvkLXGdrDSPy_wPsPxSrps3hnTR/view?usp=sharing"},
+        {"id": "5fbfe6d74c7b0000cc007c401103", "type":"video", "name":"Sobrecarga de métodos – parte 2","url":"https://drive.google.com/file/d/1XUI932J9pNv7W_epfGKly9Z6sD7s4KZy/view?usp=sharing"},
+        {"id": "5fbfe6d74c7b0000cc007c401104", "type":"video", "name":"Sobrecarga de métodos – parte 3","url":"https://drive.google.com/file/d/155pJCzhgQ4KDosExXPZXeLuMFB7ic3Xr/view?usp=sharing"},
+        {"id": "5fbfe6d74c7b0000cc007c401105", "type":"video", "name":"Sobrecarga de métodos – parte 4","url":"https://drive.google.com/file/d/1Y3zjmnadVu3QtHyX2o-e71JQHGPLne8V/view?usp=sharing"}
       ]
     },
     {
@@ -457,7 +457,7 @@ export default function data() {
       vertical: true,
       schoolSubjectId: "5fbfe6d74c7b0000cc007c40",
       files: [
-        {"id": "5fbfe6d74c7b0000cc007c401301", "type": "video", "name":"Classes e Vetor","url":"https://goo.gl/npImnN"}
+        {"id": "5fbfe6d74c7b0000cc007c401301", "type": "video", "name":"Classes e Vetor","url":"https://drive.google.com/file/d/1eEQSix2__TjeobmBl_8uZxrRKe87-KP6/view?usp=sharing"}
       ]
     },
     {
