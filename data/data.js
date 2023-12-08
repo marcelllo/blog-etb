@@ -288,7 +288,7 @@ export default function data() {
         },
         {
           id: "5fbfe6d74c7b0000cc007c400103",
-          name: "JDK 20 NetBeans 19",
+          name: "JDK 20 NetBeans 18",
           type: "zip",
           url: "http://docs.etb.com.br/s/Qz6Xg39RNLfpMZS"
         }
