@@ -281,6 +281,12 @@ export default function data() {
           url: "https://marcelo.portalceilandia.com.br/site/wp-content/uploads/2015/08/ETEC_Completo-LTP_I_Java.pdf"
         },
         {
+          id: "5fbfe6d74c7b0000cc007c400105",
+          name: "JDK 20 NetBeans 18",
+          type: "exe",
+          url: "http://docs.etb.com.br/s/Qz6Xg39RNLfpMZS"
+        },
+        {
           id: "5fbfe6d74c7b0000cc007c400103",
           name: "JDK 8 NetBeans 8.2",
           type: "exe",
